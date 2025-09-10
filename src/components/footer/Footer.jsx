@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import InstagramIcon from "../../assets/icons/Instagram.svg";
-import WhatsappIcon from "../../assets/images/Whatsapp.svg";
+import WhatsAppIcon from "../../assets/icons/WhatsApp.svg";
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
           Social
           <br />
           <img src={InstagramIcon} alt="Instagram" />
-          <img src={WhatsappIcon} alt="Whatsapp" />
+          <img src={WhatsAppIcon} alt="Whatsapp" />
         </p>
         <p>
           Address <br /> Wallstrasse 9-13, 10179 Berlin, Deutschland
