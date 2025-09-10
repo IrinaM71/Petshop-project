@@ -1,0 +1,71 @@
+.header {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  padding: 40px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  padding-left: 361px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  color: #282828;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #0078d4;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  padding-left: 350px;
+}
+
+.cart img {
+  height: 48px;
+  width: 48px;
+}
+
+.count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

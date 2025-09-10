@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
-import { CartProvider } from "./context/CartContext";
+import CartProvider from "./context/CartContext";
 import HomePage from "./pages/homePage/HomePage";
 import Categories from "./pages/categories/Categories";
 import AllProducts from "./pages/allProducts/AllProducts";
@@ -27,7 +27,7 @@ function App() {
           <Route path="/allProducts" element={<AllProducts />} />
           <Route path="/allSales" element={<AllSales />} />
           <Route path="/products/:productsId" element={<Products />} />
-          <Route path="/cart" element={<Cart />} />
+
           <Route path="/basket" element={<Basket />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>

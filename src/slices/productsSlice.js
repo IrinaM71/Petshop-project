@@ -4,8 +4,8 @@ import axios from "axios";
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
-    const res = await axios.get("http://localhost:3333/products");
-    return res.data;
+    const response = await axios.get("http://localhost:3333/products");
+    return response.data;
   }
 );
 
@@ -19,17 +19,17 @@ const productsSlice = createSlice({
 
   extraReducers: (builder) => {
     builder
-    .addCase(fetchProducts.pending, (state) => {
-      state.loading = true;
-    })
-    .addCase(fetchProducts.fulfilled, (state, action) => {
-      state.items = action.payload;
-      state.loading = false;
-    })
-    .addCase(fetchProducts.rejected, (state, action) => {
-      state.error = action.error.message;
-      state.loading = false;
-    });
+      .addCase(fetchProducts.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(fetchProducts.fulfilled, (state, action) => {
+        state.items = action.payload;
+        state.loading = false;
+      })
+      .addCase(fetchProducts.rejected, (state, action) => {
+        state.error = action.error.message;
+        state.loading = false;
+      });
   },
 });
 
